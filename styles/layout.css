@@ -1,0 +1,254 @@
+/*
+Wersja CSS: 1.1
+*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    color: white;
+    padding: 16px;
+}
+
+    footer p {
+        margin: 16px;
+        font-weight: bold;
+    }
+
+.carousel-item {
+    max-height: 80vh !important;
+}
+
+.login {
+    width: 600px;
+    height: auto;
+    padding: 32px;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px #e4e4e4 solid;
+}
+
+.subpage {
+    min-height: calc(100vh - 144px) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+}
+
+/* Panel administracyjny */
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.dashboard-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.dashboard-nav-text {
+    margin-left: 16px;
+    margin-bottom: 0px;
+}
+
+.dashboard-nav-texts {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+}
+
+.dashboard-title {
+    padding-top: 16px;
+}
+
+.dashboard-tile {
+    width: 160px;
+    height: 160px;
+    margin: 4px;
+    display: inline-grid;
+    justify-items: center;
+}
+
+.dashboard-tile i {
+    font-size: 400%;
+    margin-top: auto;
+}
+
+.dashboard-tile p {
+    margin-top: auto;
+    margin-bottom: 0;
+    justify-self: right;
+    text-align: right;
+}
+
+.content-preview {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+.edit-avatar {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu {
+    font-size: 24px;
+    margin: auto 16px;
+}
+
+.mailing-form {
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 16px;
+}
+
+.post {
+    padding: 8px;
+}
+
+    .post img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px solid black;
+        width: 80%;
+    }
+
+    .post p {
+        text-align: justify;
+        text-justify: inter-word;
+        width: 90%;
+        margin: 8px auto;
+    }
+
+    .post a {
+        text-decoration: none;
+    }
+
+.contact-form {
+    width: 80%;
+    display: block;
+    margin: 16px auto;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+.edit-form {
+    display: block;
+    margin: auto;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    min-width: 80% !important;
+}
+
+    .edit-form img {
+        width: 80%;
+        display: block;
+        margin: 16px auto;
+    }
+
+.light-theme {
+    color: #2b2b2b;
+    background-color: white;
+}
+
+    .light-theme .bg-dark {
+        background-color: rgb(248,249,250) !important;
+    }
+
+    .light-theme .navbar-text, .light-theme .navbar-brand {
+        color: rgba(0,0,0,0.55) !important;
+    }
+
+.dark-theme {
+    color: #e4e4e4;
+    background-color: #2b2b2b;
+}
+
+    .bg-dark {
+        background-color: #1c1b22 !important;
+    }
+
+    .bg-secondary {
+        background-color: #2b2a33 !important;
+    }
+
+    .dark-theme .modal-content {
+        background-color: #2b2b2b;
+    }
+
+    .dark-theme label {
+        color: #2b2b2b;
+    }
+
+    .dark-theme .table {
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    .dark-theme .contact-form, .dark-theme .edit-form, .dark-theme .mailing-form, .dark-theme .login {
+        border: 1px solid #2b2a33 !important;
+        background-color: #1c1b22 !important;
+    }
+
+    .dark-theme .login .form-check-label {
+        color: #e4e4e4;
+    }
+    
+@keyframes hi {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bye {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#site {
+    animation: 2s ease-in 0s 1 hi;
+}
+
+#loading {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 2s ease-in 0s 1 bye;
+    opacity: 0;
+}
