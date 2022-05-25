@@ -1,5 +1,5 @@
 # Sazami
 
-Dane do logowania, bez tworzenia konta:
-  Login: admin@example.com
-  Hasło: admin
+Dane do logowania, bez tworzenia konta:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Login: admin@example.com<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Hasło: admin
